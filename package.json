@@ -1,0 +1,30 @@
+{
+  "name": "react-context-theme",
+  "version": "1.0.0",
+  "description": "React Context API to handle theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daru23/react-context-theme.git"
+  },
+  "keywords": [
+    "react",
+    "context",
+    "api",
+    "context-api",
+    "theme"
+  ],
+  "author": "Daniela Ruiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daru23/react-context-theme/issues"
+  },
+  "homepage": "https://github.com/daru23/react-context-theme#readme",
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  }
+}
