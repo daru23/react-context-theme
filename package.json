@@ -4,7 +4,10 @@
   "description": "React Context API to handle theme",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node node_modules/webpack-dev-server/bin/webpack-dev-server --mode development --open",
+    "build": "node ./node_modules/webpack/bin/webpack --mode development",
+    "dev-noconfig": "node ./node_modules/webpack/bin/webpack --mode development --module-bind js=babel-loader",
+    "build-noconfig": "node ./node_modules/webpack/bin/webpack --mode production --module-bind js=babel-loader"
   },
   "repository": {
     "type": "git",
@@ -24,7 +27,24 @@
   },
   "homepage": "https://github.com/daru23/react-context-theme#readme",
   "dependencies": {
+    "@babel/polyfill": "^7.0.0-beta.51",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.0",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "webpack": "^4.12.2",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-latest": "^6.24.1"
   }
 }

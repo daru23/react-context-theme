@@ -3,9 +3,12 @@ import React, {Component, createContext} from 'react';
 const ThemeContext = createContext("light");
 
 class ThemeProvider extends Component {
-    state = {
-        theme: 'light'
-    };
+    constructor() {
+        super();
+        this.state = {
+            theme: 'light'
+        };
+    }
     toggleTheme = () => {
         this.setState(({theme}) => ({
             theme: theme === 'light' ? 'dark' : 'light',
