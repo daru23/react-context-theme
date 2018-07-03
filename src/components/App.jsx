@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {ThemeProvider, ThemeConsumer} from '../contexts/ThemeContext';
 import {styles} from './styles';
 
