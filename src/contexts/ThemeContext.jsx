@@ -6,17 +6,19 @@ class ThemeProvider extends Component {
     constructor() {
         super();
         this.state = {
-            theme: 'light'
+            theme: 'light',
+            opposite: 'dark'
         };
     }
     toggleTheme = () => {
         this.setState(({theme}) => ({
             theme: theme === 'light' ? 'dark' : 'light',
+            opposite: theme === 'light' ? 'light' : 'dark',
         }))
     };
     render() {
         return (
-            <ThemeContext.Provider value={this.state.theme}>
+            <ThemeContext.Provider value={this.state}>
                 {this.props.children({toggleTheme: this.toggleTheme})}
             </ThemeContext.Provider>
         )
